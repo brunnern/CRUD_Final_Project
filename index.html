@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="collection.js"></script>
+    <script src="app.js"></script>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 93.5%;
+        border: 5px solid grey;
+    }
+    .controls {
+        margin: 10px;
+    }
+    #load-sets {
+        margin-top: 5px;
+    }
+    .card {
+        float: right;
+        width: 350px;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+    }
+    .image_container {
+        position: relative;
+        margin-bottom: 0.75rem;
+    }
+    .set_pic {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    .data_row {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1.5rem;
+        font-size: 1rem;
+    }
+    .setName {
+        font-size: 1.75rem;
+        margin: 0;
+    }
+    .price_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .setRetail, .setValue {
+        font-weight: 700;
+    }
+    .viewCard {
+        width: 700px;
+        margin: 20px auto;
+        border: 3px solid blue;
+        padding: 15px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Nathan's Lego Collection</h1>
+    </header>
+    <div class="addCreate"></div>
+    <div class="controls">
+        <div class="filters">
+            <select id="theme-filter">
+                <option value="all">All Themes</option>
+                <option value="City">City</option>
+                <option value="Creator">Creator</option>
+                <option value="Icons">Icons</option>
+                <option value="Speed Champions">Speed Champions</option>
+                <option value="Star Wars">Star Wars</option>
+            </select>
+        </div>
+        <button id="load-sets">Load Lego Sets</button>
+    </div>
+    <div class="wrapper">
+        <!-- make cards appear like on Lego.com -->
+    </div>
+</body>
+</html>
